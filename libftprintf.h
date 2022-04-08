@@ -6,7 +6,7 @@
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 21:23:43 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/06 21:42:22 by cmachado         ###   ########.fr       */
+/*   Updated: 2022/04/08 21:59:25 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		print_c(int c);
 
 int		print_s(char *s);
 
-int		print_d(char *s);
+int		print_d(int base, int upp, int n);
 
 size_t	ft_strlen(const char *str);
 
