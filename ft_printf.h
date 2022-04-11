@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 21:23:43 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/08 21:59:25 by cmachado         ###   ########.fr       */
+/*   Updated: 2022/04/11 20:56:47 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 # include <stdio.h>
 # include <stdarg.h>
+# include <unistd.h>
 
 int		ft_printf(const char *str, ...);
 
@@ -25,8 +26,10 @@ int		print_s(char *s);
 
 int		print_d(int base, int upp, int n);
 
-size_t	ft_strlen(const char *str);
+int		print_u(unsigned int n);
 
-char	*ft_itoa(int n);
+int		print_p(unsigned long int n);
+
+size_t	ft_strlen(const char *str);
 
 #endif

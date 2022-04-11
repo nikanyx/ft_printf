@@ -6,14 +6,14 @@
 #    By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/04 19:30:43 by cmachado          #+#    #+#              #
-#    Updated: 2022/04/06 21:40:24 by cmachado         ###   ########.fr        #
+#    Updated: 2022/04/11 20:46:39 by cmachado         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
 SRC = ft_printf.c print_c.c print_s.c print_pct.c print_d.c \
-	ft_strlen.c ft_itoa.c
+	print_p.c print_u.c ft_strlen.c
 
 CFLAGS = -Wall -Werror -Wextra
 

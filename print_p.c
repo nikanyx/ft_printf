@@ -1,19 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_c.c                                          :+:      :+:    :+:   */
+/*   print_p.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/06 21:20:58 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/11 20:57:31 by cmachado         ###   ########.fr       */
+/*   Created: 2022/04/11 20:29:20 by cmachado          #+#    #+#             */
+/*   Updated: 2022/04/11 20:57:28 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_c(int c)
+static int	w_nbr(unsigned long int n, int cnt)
 {
-	write(1, &c, 1);
-	return (1);
+	char	c;
+
+	if (n > 16)
+	{
+		cnt += w_nbr(n / 16, cnt);
+		w_nbr(n % 16, cnt);
+	}
+	else
+	{
+		if (n > 9)
+			c = n + 87;
+		else
+			c = n + 48;
+		write(1, &c, 1);
+	}
+	return (cnt);
+}
+
+int	print_p(unsigned long int p)
+{
+	int	cnt;
+
+	write(1, "0x", 2);
+	cnt = w_nbr(p, 1) + 2;
+	return (cnt);
 }

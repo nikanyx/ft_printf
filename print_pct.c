@@ -6,11 +6,11 @@
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 21:36:43 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/06 21:37:06 by cmachado         ###   ########.fr       */
+/*   Updated: 2022/04/11 20:57:27 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	print_pct(void)
 {
