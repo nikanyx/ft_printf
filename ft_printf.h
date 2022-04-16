@@ -6,7 +6,7 @@
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 21:23:43 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/11 20:56:47 by cmachado         ###   ########.fr       */
+/*   Updated: 2022/04/16 22:04:08 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int		print_c(int c);
 
 int		print_s(char *s);
 
-int		print_d(int base, int upp, int n);
+int		print_d(int n);
 
-int		print_u(unsigned int n);
+int		print_u(unsigned int base, int upp, unsigned int n);
 
 int		print_p(unsigned long int n);
 

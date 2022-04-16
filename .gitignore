@@ -2,4 +2,5 @@ a.out
 .DS_Store
 test
 printfTester
+ft_printf_tester
 *.a

@@ -6,7 +6,7 @@
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/04 19:29:03 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/11 20:56:41 by cmachado         ###   ########.fr       */
+/*   Updated: 2022/04/16 22:03:15 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ static int	check_var(const char c, va_list args)
 	else if (c == '%')
 		cnt = print_pct();
 	else if (c == 'd' || c == 'i')
-		cnt = print_d(10, 0, va_arg(args, int));
+		cnt = print_d(va_arg(args, int));
 	else if (c == 'u')
-		cnt = print_u(va_arg(args, unsigned int));
+		cnt = print_u(10, 0, va_arg(args, unsigned int));
 	else if (c == 'X')
-		cnt = print_d(16, 1, va_arg(args, int));
+		cnt = print_u(16, 1, va_arg(args, int));
 	else if (c == 'x')
-		cnt = print_d(16, 0, va_arg(args, int));
+		cnt = print_u(16, 0, va_arg(args, int));
 	else if (c == 'p')
 		cnt = print_p(va_arg(args, unsigned long int));
 	return (cnt);
