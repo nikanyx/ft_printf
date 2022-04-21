@@ -6,7 +6,7 @@
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 20:29:20 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/11 20:57:28 by cmachado         ###   ########.fr       */
+/*   Updated: 2022/04/21 21:49:22 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int	w_nbr(unsigned long int n, int cnt)
 {
 	char	c;
 
-	if (n > 16)
+	if (n >= 16)
 	{
 		cnt += w_nbr(n / 16, cnt);
 		w_nbr(n % 16, cnt);

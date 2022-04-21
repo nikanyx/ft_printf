@@ -6,7 +6,7 @@
 /*   By: cmachado <cmachado@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/06 21:23:43 by cmachado          #+#    #+#             */
-/*   Updated: 2022/04/16 22:04:08 by cmachado         ###   ########.fr       */
+/*   Updated: 2022/04/21 21:57:15 by cmachado         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,5 @@ int		print_d(int n);
 int		print_u(unsigned int base, int upp, unsigned int n);
 
 int		print_p(unsigned long int n);
-
-size_t	ft_strlen(const char *str);
 
 #endif
